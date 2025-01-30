@@ -26,6 +26,12 @@ class Person {
         cin >> ID;
     }
 
+    void dissplayPersonDetails(){
+        cout << "Name: " << Name << endl;
+        cout << "Age: " << Age << endl;
+        cout << "ID: " << ID << endl;
+    }
+
 };
 
 class Student: public Person{
