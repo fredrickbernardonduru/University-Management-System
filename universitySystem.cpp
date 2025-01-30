@@ -18,25 +18,34 @@ class Person {
 
 };
 
-class Student{
+class Student: public Person{
     private:
     string Course;
     float GPA;
 
     public:
-    Student(string course, float gpa){
+    Student(string course, float gpa: Person(name, age, id)){
         Course = course;
         GPA = gpa;
     }
+
+
+    void setGPA(float gpa){
+        GPA = gpa;
+    }
+
+    float getGPA(){
+        return GPA;
+    }
 };
 
-class Lecturer{
+class Lecturer:public Person{
     private:
     string Department;
     float Salary;
 
     public:
-    Lecturer(string department, string salary){
+    Lecturer(string department, string salary):Person(name, age, id){
         Department = department;
         Salary = salary;
     }
