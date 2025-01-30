@@ -51,9 +51,10 @@ class Student: public Person{
         cin >> GPA;
     }
 
-    float getGPA(){
-        return GPA;
-    }
+    void updateGPA(float gpa){
+        cout << "Enter new GPA: "<< endl;
+        cin >> GPA;
+        cout << "Updating Student GPA: " << GPA << endl;
 };
 
 class Lecturer:public Person{
