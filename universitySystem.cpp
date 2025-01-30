@@ -101,7 +101,8 @@ int main (){
     Student student1();
     cout <<"Enter Student Details: " << endl;
     student1.addPersonDetails();
-
+    student1.setGPA();
+    student1.displayStudentDetails();
     Lecturer lecturer1();
     lecturer1.addPersonDetails();
 }
