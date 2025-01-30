@@ -76,6 +76,7 @@ class Lecturer:public Person{
     }
     void updatedLecturerDetails(){
         cout << "My name is " << Name << " and I am " << Age << "years old. My ID is " << ID << endl;
+        cout << "I teach in the " << Department << " department and my salary is " << Salary << "per month"<< endl;
     }
 
 
