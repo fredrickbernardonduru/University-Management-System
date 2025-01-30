@@ -5,7 +5,7 @@
 using namespace std;
 
 class Person {
-    private:
+    protected:
     string  Name;
     int Age;
     string ID;
@@ -40,7 +40,7 @@ class Student: public Person{
     float GPA;
 
     public:
-    Student(string course, float gpa: Person(name, age, id)){
+    Student(string course, float gpa): Person(name, age, id){
         Course = course;
         GPA = gpa;
     }
