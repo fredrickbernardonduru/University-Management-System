@@ -99,5 +99,9 @@ class Lecturer:public Person{
 
 int main (){
     Student student1();
+    cout <<"Enter Student Details: " << endl;
+    student1.addPersonDetails();
+
     Lecturer lecturer1();
+    lecturer1.addPersonDetails();
 }
