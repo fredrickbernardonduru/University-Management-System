@@ -47,7 +47,8 @@ class Student: public Person{
 
 
     void setGPA(float gpa){
-        GPA = gpa;
+        cout << "Enter GPA: "<< endl;
+        cin >> GPA;
     }
 
     float getGPA(){
@@ -66,7 +67,7 @@ class Lecturer:public Person{
         Salary = salary;
     }
 
-    void increasewSalary(float salary, int percentage){
+    void increaseSalary(float salary, int percentage){
         cout <<"Enter the percentage increase: ";
         cin >> percentage;
         cout <<"Updating Lecturer salary by: " << percentage << "%" << endl;
