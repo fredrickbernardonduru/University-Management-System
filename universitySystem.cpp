@@ -105,8 +105,12 @@ int main (){
     student1.displayStudentDetails();
 
     Lecturer lecturer1();
+    cout <<"Enter Lecturer Details: " << endl;
     lecturer1.addPersonDetails();
     lecturer1.showLecturerDetails();
-
+    student1.updateGPA();
+    lecturer1.increaseSalary();
+    student1.displayStudentDetails();
+    lecturer1.updatedLecturerDetails();
     return 0;
 }
