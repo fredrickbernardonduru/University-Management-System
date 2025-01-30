@@ -56,6 +56,11 @@ class Student: public Person{
         cin >> GPA;
         cout << "Updating Student GPA: " << GPA << endl;
     }
+    void displayStudentDetails(){
+        cout <<"Student Details: " << endl;
+        cout << "My name is " << Name << " and I am " << Age << "years old. My ID is " << ID << endl;
+        cout << "I am studying " << Course << " and my GPA is " << GPA << endl;
+    }
 };
 
 class Lecturer:public Person{
@@ -67,6 +72,12 @@ class Lecturer:public Person{
     Lecturer(string department, string salary):Person(name, age, id){
         Department = department;
         Salary = salary;
+    }
+
+    void showLecturerDetails(){
+        cout << "Lecturer Details: " << endl;
+        cout << "My name is " << Name << " and I am " << Age << "years old. My ID is " << ID << endl;
+        cout << "I teach in the " << Department << " department and my salary is " << Salary << "per month"<< endl;
     }
 
     void increaseSalary(float salary, int percentage){
