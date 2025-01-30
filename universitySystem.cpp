@@ -26,7 +26,7 @@ class Person {
         cin >> ID;
     }
 
-    void dissplayPersonDetails(){
+    void displayPersonDetails(){
         cout << "Name: " << Name << endl;
         cout << "Age: " << Age << endl;
         cout << "ID: " << ID << endl;
@@ -35,12 +35,12 @@ class Person {
 };
 
 class Student: public Person{
-    private:
+    protected:
     string Course;
     float GPA;
 
     public:
-    Student(string course, float gpa): Person(name, age, id){
+    Student(string name, int age, string id, string course, float gpa): Person(name, age, id){
         Course = course;
         GPA = gpa;
     }
@@ -51,9 +51,10 @@ class Student: public Person{
         cin >> GPA;
     }
 
-    void updateGPA(float gpa){
+    void updateGPA(float newGPA){
         cout << "Enter new GPA: "<< endl;
         cin >> GPA;
+        newGPA = GPA;
         cout << "Updating Student GPA: " << GPA << endl;
     }
     void displayStudentDetails(){
@@ -69,7 +70,7 @@ class Lecturer:public Person{
     float Salary;
 
     public:
-    Lecturer(string department, string salary):Person(name, age, id){
+    Lecturer(string name, int age, string id, string department, float salary): Person(name, age, id){
         Department = department;
         Salary = salary;
     }
@@ -77,7 +78,7 @@ class Lecturer:public Person{
     void showLecturerDetails(){
         cout << "Lecturer Details: " << endl;
         cout << "My name is " << Name << " and I am " << Age << "years old. My ID is " << ID << endl;
-        cout << "I teach in the " << Department << " department and my salary is " << Salary << "per month"<< endl;
+        cout << "I teach in the " << Department << " department and my salary is " << Salary << " per month"<< endl;
     }
 
     void increaseSalary(float salary, int percentage){
@@ -98,13 +99,13 @@ class Lecturer:public Person{
 
 
 int main (){
-    Student student1();
+    Student student1;
     cout <<"Enter Student Details: " << endl;
     student1.addPersonDetails();
     student1.setGPA();
     student1.displayStudentDetails();
 
-    Lecturer lecturer1();
+    Lecturer lecturer1;
     cout <<"Enter Lecturer Details: " << endl;
     lecturer1.addPersonDetails();
     lecturer1.showLecturerDetails();
