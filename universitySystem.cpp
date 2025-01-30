@@ -55,6 +55,7 @@ class Student: public Person{
         cout << "Enter new GPA: "<< endl;
         cin >> GPA;
         cout << "Updating Student GPA: " << GPA << endl;
+    }
 };
 
 class Lecturer:public Person{
