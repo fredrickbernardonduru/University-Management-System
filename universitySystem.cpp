@@ -10,10 +10,20 @@ class Person {
     int Age;
     string ID;
 
+    public:
     Person(string name, int age, string id){
         Name = name;
         Age = age;
         ID = id;
+    }
+
+    void addPersonDetails(){
+        cout << "Enter Name: ";
+        cin >> Name;
+        cout << "Enter Age: ";
+        cin >> Age;
+        cout << "Enter ID: ";
+        cin >> ID;
     }
 
 };
@@ -49,4 +59,14 @@ class Lecturer:public Person{
         Department = department;
         Salary = salary;
     }
+
+    void addLe
+
+
 };
+
+
+int main (){
+    Student student1();
+    Lecturer lecturer1();
+}
