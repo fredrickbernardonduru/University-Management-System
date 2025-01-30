@@ -69,9 +69,13 @@ class Lecturer:public Person{
     void increasewSalary(float salary, int percentage){
         cout <<"Enter the percentage increase: ";
         cin >> percentage;
+        cout <<"Updating Lecturer salary by: " << percentage << "%" << endl;
 
         Salary = salary + (salary * percentage/100);
 
+    }
+    void updatedLecturerDetails(){
+        cout << "My name is " << Name << " and I am " << Age << "years old. My ID is " << ID << endl;
     }
 
 
